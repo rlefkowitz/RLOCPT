@@ -1,0 +1,26 @@
+### Starting build.
+# Target: moremath.mli.depends, tags: { package(ANSITerminal), package(ounit2), extension:mli, file:moremath.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package ounit2 -package ANSITerminal -modules moremath.mli > moremath.mli.depends
+# Target: moremath.cmi, tags: { package(ANSITerminal), package(ounit2), byte, compile, extension:mli, file:moremath.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package ounit2 -package ANSITerminal -o moremath.cmi moremath.mli
+# Target: moremath.ml.depends, tags: { package(ANSITerminal), package(ounit2), extension:ml, file:moremath.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package ounit2 -package ANSITerminal -modules moremath.ml > moremath.ml.depends
+# Target: moremath.cmo, tags: { package(ANSITerminal), package(ounit2), byte, compile, extension:cmo, extension:ml, file:moremath.cmo, file:moremath.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package ounit2 -package ANSITerminal -o moremath.cmo moremath.ml
+# Target: vec3.mli.depends, tags: { package(ANSITerminal), package(ounit2), extension:mli, file:vec3.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package ounit2 -package ANSITerminal -modules vec3.mli > vec3.mli.depends
+# Target: vec3.cmi, tags: { package(ANSITerminal), package(ounit2), byte, compile, extension:mli, file:vec3.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package ounit2 -package ANSITerminal -o vec3.cmi vec3.mli
+# Target: vec3.ml.depends, tags: { package(ANSITerminal), package(ounit2), extension:ml, file:vec3.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package ounit2 -package ANSITerminal -modules vec3.ml > vec3.ml.depends
+# Target: vec3.cmo, tags: { package(ANSITerminal), package(ounit2), byte, compile, extension:cmo, extension:ml, file:vec3.cmo, file:vec3.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package ounit2 -package ANSITerminal -o vec3.cmo vec3.ml
+# Target: material.mli.depends, tags: { package(ANSITerminal), package(ounit2), extension:mli, file:material.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package ounit2 -package ANSITerminal -modules material.mli > material.mli.depends
++ ocamlfind ocamldep -package ounit2 -package ANSITerminal -modules material.mli > material.mli.depends
+File "material.mli", line 6, characters 12-16:
+6 |   | Diffuse vec3
+                ^^^^
+Error: Syntax error
+Command exited with code 2.
+# Compilation unsuccessful.

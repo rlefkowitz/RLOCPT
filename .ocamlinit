@@ -1,0 +1,8 @@
+#require "ounit2";;
+#require "ANSITerminal";;
+#directory "_build";;
+#load "moremath.cmo";;
+#load "vec3.cmo";;
+#load "material.cmo";;
+
+#use "vec3.ml";;
